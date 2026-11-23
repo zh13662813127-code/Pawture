@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="看咪咪和宝宝如何从各自的一张照片，变成 Mac 桌面上的伙伴。">
+  <title>爪影 Pawture · 介绍短片</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; background: #f8faf8; color: #1c2823; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(100% - 32px, 1040px); margin: 0 auto; padding: 36px 0; }
+    header, footer { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px 24px; }
+    header { justify-content: space-between; margin-bottom: 16px; }
+    h1 { margin: 0; font-size: 1.55rem; }
+    h1 span { font-size: .95rem; font-weight: 500; color: #4c6255; }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #19221f; }
+    footer { margin-top: 18px; }
+    a { color: #176047; text-underline-offset: 4px; }
+    a:focus-visible, video:focus-visible { outline: 3px solid #6294db; outline-offset: 3px; }
+    @media (prefers-color-scheme: dark) {
+      :root { background: #161a18; color: #f5f6f2; }
+      a, h1 span { color: #a6d6bc; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>爪影 Pawture <span>／ 介绍短片</span></h1>
+      <a href="https://github.com/zh13662813127-code/Pawture">GitHub 项目</a>
+    </header>
+    <video controls playsinline preload="metadata" poster="media/poster.jpg" aria-label="爪影 Pawture 产品介绍">
+      <source src="media/pawture-intro.mp4" type="video/mp4">
+      <track kind="subtitles" srclang="en" label="English" src="media/intro.en.vtt">
+    </video>
+    <footer>
+      <a href="https://github.com/zh13662813127-code/Pawture/releases/latest">下载 Mac 试玩版</a>
+      <a href="media/pawture-intro.mp4" download>下载短片 MP4</a>
+    </footer>
+  </main>
+</body>
+</html>
