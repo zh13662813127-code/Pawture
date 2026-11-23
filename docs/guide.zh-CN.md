@@ -6,12 +6,9 @@
 
 ## 试玩
 
-需要 macOS 14 或更新版本，以及 Swift 6 工具链。
+试玩包适用于 Apple 芯片的 Mac，系统需为 macOS 14 或更新版本。下载[最新试玩包](https://github.com/zh13662813127-code/Pawture/releases/latest/download/Pawture-macOS-arm64.zip)，解压，将 `Pawture.app` 拖入「应用程序」并打开。试玩不需要安装 Swift。
 
-```sh
-Scripts/package-app.sh
-open build/Pawture.app
-```
+目前的试玩包未经 Apple 公证，首次启动可能被 macOS 拦截。可以参阅 [Apple 关于打开 App 的说明](https://support.apple.com/zh-cn/102445)，或按[从源码运行](../README.md#从源码运行)自行构建。只有源码构建才需要 Swift 6 工具链。
 
 第一次启动自带咪咪和宝宝。到「我的猫咪」可以更换照片、添加猫咪和调整性格。照片里的脸、四肢和轮廓越清楚，姿态定位越稳。程序把照片和角色设置保存在本机的 `~/Library/Application Support/DesktopCats`。
 

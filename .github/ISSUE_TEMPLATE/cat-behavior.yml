@@ -1,0 +1,35 @@
+name: 猫咪的反应 / Cat behavior
+description: 说说一次具体的互动。Tell us about one interaction.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        用中文或英文描述即可，不必附猫的照片、桌面截图或私人信息。
+        Chinese or English is welcome. No photos, screenshots or personal details needed.
+  - type: input
+    id: initial-state
+    attributes:
+      label: 当时猫在做什么？ / What was the cat doing?
+      placeholder: 例如，陪伴模式下，咪咪正蜷在文档旁边睡觉。
+    validations:
+      required: true
+  - type: input
+    id: action
+    attributes:
+      label: 你做了什么？ / What did you do?
+      placeholder: 例如，我没按鼠标键，沿着它的背缓缓划了一下。
+    validations:
+      required: true
+  - type: textarea
+    id: reaction
+    attributes:
+      label: 猫怎么回应的？ / How did it react?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 哪种反应更像你熟悉的猫？ / What reaction would feel more familiar?
+      placeholder: 例如，我家的猫有时只转一下耳朵，眼睛都不睁。
+    validations:
+      required: false

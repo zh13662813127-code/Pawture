@@ -4,15 +4,15 @@
 
 翻到它的照片时，你有没有下意识地伸手，想再摸摸它的头？
 
-爪影是一个开源的 Mac 桌面宠物项目。选一张你家猫的照片，它就能带着那张熟悉的脸，在你写字时蜷在桌面一角。把鼠标沿着它的背轻轻划过，它也许只哼一声，接着睡。
+爪影是一个开源的 Mac 桌面宠物项目。选一张你家猫的照片，它就能在你写字时蜷在桌面一角。用鼠标轻轻摸过它的背，它也许只哼一声，接着睡。
 
-[下载 Mac 试玩版](https://github.com/zh13662813127-code/Pawture/releases/latest) · [看介绍短片](https://zh13662813127-code.github.io/Pawture/) · [English](README.en.md)
+[看短片《给它留一个熟悉的日常》· 38 秒](https://zh13662813127-code.github.io/Pawture/) · [下载试玩版（Apple 芯片，macOS 14+）](https://github.com/zh13662813127-code/Pawture/releases/latest/download/Pawture-macOS-arm64.zip) · [安装说明](docs/guide.zh-CN.md#试玩) · [English](README.en.md)
 
 [![咪咪和宝宝靠近，先碰鼻子，再蹭脸颊。点击看完整短片。](docs/media/greeting.gif)](https://zh13662813127-code.github.io/Pawture/)
 
-*咪咪和宝宝是两只真实的猫。这里看见的动作，由爪影用它们各自的一张照片绘制。*
+*咪咪和宝宝碰鼻子。两只猫，各用一张照片，动作由程序在桌面上画出来。*
 
-我们想做的「宠物赛博永生」，是把一点熟悉的日常留下来。一张照片留得住它额头的花纹，留不住它的记忆，也猜不出它从前有多黏人。那些你才知道的小习惯，可以由你慢慢调：让一只多睡一会儿，让另一只更喜欢过来蹭你。下次打开电脑，桌边还给它留着位置。
+我们想做的「宠物赛博永生」，是把一点熟悉的日常留下来。一张照片留得住它额头的花纹，留不住它的记忆。它有多粘人、多爱睡，你记得，也能亲手调。
 
 ## 先和它们待一会儿
 
@@ -25,9 +25,9 @@
 
 ## 把自己的猫带来
 
-1. 在 **macOS 14 或更新版本的 Apple 芯片 Mac** 上，从 [Releases](https://github.com/zh13662813127-code/Pawture/releases/latest) 下载试玩版，解压并打开 `Pawture.app`。预览版未经 Apple 公证；也可以按下方步骤从源码运行。
-2. 第一次打开已有咪咪和宝宝。在「我的猫咪」点 **＋**，选中新增的猫，点「更换照片」。选一张只有这只猫、脸和身体轮廓都清楚的照片，成功率更高。
-3. 调整它有多淘气、粘人、爱睡、好奇或独立，然后关掉控制面板。猫仍然在其他应用的窗口上活动。要再找面板，点菜单栏里的爪印。
+1. 解压试玩包，打开 `Pawture.app`，咪咪和宝宝已经在了。预览版未经 Apple 公证；首次打开请参考[安装说明](docs/guide.zh-CN.md#试玩)。
+2. 在「我的猫咪」点 **＋**，选中新增的猫，再点「更换照片」。选一张只有它、脸和身体轮廓都清楚的照片。
+3. 调好性格，关掉控制面板。猫会留在桌面；想再调整，点菜单栏里的爪印。
 
 ## 一张照片怎么动起来
 
@@ -44,6 +44,8 @@ Scripts/package-app.sh
 open build/Pawture.app
 ```
 
-[使用手册与行为依据](docs/guide.zh-CN.md) · [报告问题或提建议](https://github.com/zh13662813127-code/Pawture/issues)
+哪一下不像你家猫？[告诉我们它当时在做什么、你做了什么、它怎么回应](https://github.com/zh13662813127-code/Pawture/issues/new?template=cat-behavior.yml)。只写文字就可以，不必上传照片。
+
+[使用手册与行为依据](docs/guide.zh-CN.md) · [其他问题与建议](https://github.com/zh13662813127-code/Pawture/issues)
 
 代码使用 [MIT 许可证](LICENSE)。咪咪和宝宝的照片剪影、动图和短片另有[素材使用说明](docs/media-rights.md)。

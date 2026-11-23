@@ -2,15 +2,17 @@
 
 **Keep a spot on your desk for the cat you miss.**
 
-Have you ever come across a photo of your cat and reached out to stroke its head? Pawture is an open-source Mac app that gives that gesture somewhere to go. One photo is enough: your cat can curl up in a corner of the desktop while you write. Brush its back with the pointer and it might murmur, then fall asleep again.
+Have you ever come across a photo of your cat and reached out to stroke its head? Pawture is an open-source Mac app that gives that gesture somewhere to go. From one photo, your cat can curl up on your desktop while you write. Brush its back with the pointer. It might murmur and go right back to sleep.
 
-[Download for Mac](https://github.com/zh13662813127-code/Pawture/releases/latest) · [Watch the short film](https://zh13662813127-code.github.io/Pawture/) · [中文](README.md)
+[Watch *A Familiar Place in Your Day* · 38 seconds, English subtitles](https://zh13662813127-code.github.io/Pawture/?lang=en) · [Download for Apple silicon (macOS 14+)](https://github.com/zh13662813127-code/Pawture/releases/latest/download/Pawture-macOS-arm64.zip) · [Installation](#try-it) · [中文](README.md)
 
-[![Mimi and Baobao lean in to greet each other. Select to watch the film.](docs/media/greeting.gif)](https://zh13662813127-code.github.io/Pawture/)
+[![Mimi and Baobao lean in to greet each other. Select to watch the film.](docs/media/greeting.gif)](https://zh13662813127-code.github.io/Pawture/?lang=en)
 
-This is what a digital keepsake means to us. A photo holds the markings on a cat's forehead; it can't hold its memories or tell how much it liked being petted. You know those little habits. Give one cat more time to nap and let the other come looking for you. Next time you open your Mac, there's still a place for them.
+This is what a digital keepsake means to us. A photo can hold the markings on a cat's forehead, but not its memories. You know which cat liked a nap and which one came looking for you. You can set those habits yourself.
 
-**Try it.** Unzip the preview on an Apple silicon Mac running macOS 14 or later and open `Pawture.app`. This preview is not notarized by Apple. The app interface is currently in Chinese. Two cats, Mimi and Baobao, are there on first launch.
+## Try it
+
+Unzip the Mac download, move `Pawture.app` into Applications, and open it. No Swift tools are needed. This preview is not notarized by Apple; see [Apple's guide to opening apps](https://support.apple.com/en-us/102445) if macOS blocks it, or build from source below. The app interface is in Chinese. Mimi and Baobao are there on first launch.
 
 - **Bring your own cat.** In 我的猫咪 (My Cats), press **＋**, select the new cat, then choose 更换照片 (Change Photo). Use a clear photo of one cat with its face and body visible. Adjust playfulness, affection, sleepiness, curiosity and independence.
 - **Give them room.** Cats live over other apps, even after you close the control panel. Drag a cat to a new resting spot, or switch on click-through in the paw menu. Familiar cats sometimes touch noses or settle down together.
@@ -29,4 +31,6 @@ Scripts/package-app.sh
 open build/Pawture.app
 ```
 
-[User guide and behavior references (Chinese)](docs/guide.zh-CN.md) · [Issues](https://github.com/zh13662813127-code/Pawture/issues) · [MIT license for code](LICENSE) · [Photo and media terms](docs/media-rights.md)
+[Does a reaction feel wrong for your cat?](https://github.com/zh13662813127-code/Pawture/issues/new?template=cat-behavior.yml) Tell us what the cat was doing and what happened next. A written description is enough.
+
+[User guide and behavior references (Chinese)](docs/guide.zh-CN.md) · [Other issues](https://github.com/zh13662813127-code/Pawture/issues) · [MIT license for code](LICENSE) · [Photo and media terms](docs/media-rights.md)

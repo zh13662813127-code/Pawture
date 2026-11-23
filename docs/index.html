@@ -3,8 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="翻到它的照片时，你有没有下意识地伸手，想再摸摸它的头？一个关于宠物陪伴与记忆的开源 Mac 项目。">
-  <title>给想念的猫，在桌边留个位置 · 爪影 Pawture</title>
+  <meta name="description" content="给它留一个熟悉的日常。38 秒认识爪影：选一张猫的照片，在 Mac 桌面摸摸它，看它跟同伴挨着打盹。">
+  <link rel="canonical" href="https://zh13662813127-code.github.io/Pawture/">
+  <meta property="og:type" content="video.other">
+  <meta property="og:title" content="给它留一个熟悉的日常 · 爪影 Pawture">
+  <meta property="og:description" content="一张猫的照片，让桌边多一份陪伴。观看 38 秒中文短片。">
+  <meta property="og:url" content="https://zh13662813127-code.github.io/Pawture/">
+  <meta property="og:image" content="https://zh13662813127-code.github.io/Pawture/media/familiar-days/poster.jpg">
+  <meta property="og:image:alt" content="橘猫咪咪歪头看向镜头，左边写着「照片里的那只猫」。">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>给它留一个熟悉的日常 · 爪影 Pawture</title>
   <style>
     :root { color-scheme: light dark; font-family: system-ui, sans-serif; background: #f8faf8; color: #1c2823; }
     * { box-sizing: border-box; }
@@ -16,6 +24,9 @@
     h1 span { font-size: .95rem; font-weight: 500; color: #4c6255; }
     video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #19221f; }
     footer { margin-top: 18px; }
+    details { margin-top: 24px; font-size: .9rem; }
+    summary { cursor: pointer; width: fit-content; }
+    details p { margin: 10px 0; }
     a { color: #176047; text-underline-offset: 4px; }
     a:focus-visible, video:focus-visible { outline: 3px solid #6294db; outline-offset: 3px; }
     @media (prefers-color-scheme: dark) {
@@ -27,19 +38,38 @@
 <body>
   <main>
     <header>
-      <h1>爪影 Pawture <span>／ 给想念的猫，在桌边留个位置</span></h1>
-      <a href="https://github.com/zh13662813127-code/Pawture">GitHub 项目</a>
+      <h1>爪影 Pawture <span data-en="/ A Familiar Place in Your Day">／ 给它留一个熟悉的日常</span></h1>
+      <a data-en="View on GitHub" href="https://github.com/zh13662813127-code/Pawture">GitHub 项目</a>
     </header>
-    <video controls playsinline preload="metadata" poster="media/companion/poster.jpg" aria-label="给想念的猫，在桌边留个位置">
-      <source src="media/companion/film.mp4" type="video/mp4">
-      <track kind="captions" srclang="zh-CN" label="中文" src="media/companion/zh.vtt">
-      <track kind="subtitles" srclang="en" label="English" src="media/companion/en.vtt">
+    <video controls playsinline preload="metadata" poster="media/familiar-days/poster.jpg" aria-label="给它留一个熟悉的日常">
+      <source src="media/familiar-days/film.mp4" type="video/mp4">
+      <track kind="captions" srclang="zh-CN" label="中文" src="media/familiar-days/zh.vtt">
+      <track kind="subtitles" srclang="en" label="English" src="media/familiar-days/en.vtt">
     </video>
     <footer>
-      <a href="https://github.com/zh13662813127-code/Pawture/releases/latest">下载 Mac 试玩版</a>
-      <a href="media/companion/film.mp4" download="Pawture-companion.mp4">下载短片 MP4</a>
-      <a href="media/pawture-intro.mp4">另看：30 秒玩法演示</a>
+      <a data-en="Get Pawture for Mac" href="https://github.com/zh13662813127-code/Pawture/releases/latest">下载 Mac 试玩版</a>
+      <a data-en="Download the film (MP4)" href="media/familiar-days/film.mp4" download="Pawture-Familiar-Days.mp4">下载本片 MP4</a>
+      <a id="language" href="?lang=en" lang="en" hreflang="en">English subtitles</a>
     </footer>
+    <details>
+      <summary data-en="Earlier films">往期短片</summary>
+      <p><a data-en="A spot on your desk (42 s, Mandarin)" href="media/companion/film.mp4">给想念的猫，在桌边留个位置（42 秒）</a></p>
+      <p><a data-en="Mimi and Baobao: gameplay demo (30 s)" href="media/pawture-intro.mp4">咪咪和宝宝：玩法演示（30 秒）</a></p>
+    </details>
   </main>
+  <script>
+    if (new URLSearchParams(location.search).get("lang") === "en") {
+      document.documentElement.lang = "en";
+      document.title = "A Familiar Place in Your Day · Pawture";
+      for (const item of document.querySelectorAll("[data-en]")) item.textContent = item.dataset.en;
+      const video = document.querySelector("video");
+      video.setAttribute("aria-label", "A Familiar Place in Your Day");
+      video.querySelector('track[srclang="en"]').track.mode = "showing";
+      const link = document.getElementById("language");
+      link.textContent = "中文";
+      link.lang = link.hreflang = "zh-CN";
+      link.href = "./";
+    }
+  </script>
 </body>
 </html>
