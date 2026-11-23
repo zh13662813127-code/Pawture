@@ -1,10 +1,14 @@
 # Pawture · 爪影
 
-Give Pawture one photo of your cat and it can curl up on your Mac desktop. Brush the sleeping cat's back with your pointer. It might stir, let out a little murmur, and go right back to sleep.
+**Keep a spot on your desk for the cat you miss.**
+
+Have you ever come across a photo of your cat and reached out to stroke its head? Pawture is an open-source Mac app that gives that gesture somewhere to go. One photo is enough: your cat can curl up in a corner of the desktop while you write. Brush its back with the pointer and it might murmur, then fall asleep again.
 
 [Download for Mac](https://github.com/zh13662813127-code/Pawture/releases/latest) · [Watch the short film](https://zh13662813127-code.github.io/Pawture/) · [中文](README.md)
 
 [![Mimi and Baobao lean in to greet each other. Select to watch the film.](docs/media/greeting.gif)](https://zh13662813127-code.github.io/Pawture/)
+
+This is what a digital keepsake means to us. A photo holds the markings on a cat's forehead; it can't hold its memories or tell how much it liked being petted. You know those little habits. Give one cat more time to nap and let the other come looking for you. Next time you open your Mac, there's still a place for them.
 
 **Try it.** Unzip the preview on an Apple silicon Mac running macOS 14 or later and open `Pawture.app`. This preview is not notarized by Apple. The app interface is currently in Chinese. Two cats, Mimi and Baobao, are there on first launch.
 
